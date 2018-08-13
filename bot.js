@@ -13,6 +13,12 @@ client.on('message', message => {
     message.channel.send("Hank Borgerson has arrived!", {files: ["https://i.imgur.com/cr0cy6X.png"]});
   	}
     
+    
+    if (message.toLowerCase().content === 'hallo henk') {
+    	message.reply('Hallo vriendje!');
+  	}
+    
+    
     if (message.content === 'hb!help') {
         
     message.channel.send({embed: {
