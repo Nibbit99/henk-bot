@@ -8,7 +8,11 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content.includes('hb!neef')) {
     	message.reply("Ja broer?");
-    }
+  	}
+    
+    if (message.content === 'hb!eend') {
+    	message.reply("Quack!");
+  	}
     
     if (message.content.includes('hb!hallo henk')) {
     	message.reply("hallo daar mijn naam is zeker Henk. Wees gegroet en heb een goede dag, want god wees met u.");
@@ -29,7 +33,9 @@ client.on('message', message => {
       color: 241222,
       description: "hb!henk \n neef"
     }});
-        
+    
+  	}
+    
 });
 
 client.login(process.env.BOT_TOKEN);
