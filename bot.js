@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    String messagelower = toLowerCase(message);
+    var messagelower = message.toLowerCase();
     if (message.content.includes('neef')) {
     	message.reply(messagelower);
   	}
