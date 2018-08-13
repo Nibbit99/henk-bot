@@ -25,7 +25,8 @@ client.on('message', message => {
     if (message.content === 'hb!test'){
         
     VoiceChannel myChannel = member.getVoiceState().getChannel();
-    message.reply(String(myChannel));
+    AudioManager audioManager = guild.getAudioManager();
+    audioManager.openAudioConnection(myChannel);
         
   	}
     
