@@ -1,17 +1,15 @@
-import discord
-from discord.ext import commands
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-bot = commands.Bot(command_prefix='hb!')
+client.on('ready', () => {
+    console.log('I am ready!');
+});
 
-@bot.event
-async def on_ready():
-    print('Logged in as')
-    print(bot.user.name)
-    print(bot.user.id)
-    print('------')
+client.on('message', message => {
+    if (message.content === 'neef') {
+    	message.reply('broeder');
+  	}
+});
 
-@bot.command()
-async def greet(ctx):
-    await ctx.send("Hello, there!")
-
-bot.run('NDc4MzMxMzQxOTk0MTk3MDMy.DlMZ5w.smUBE6DS67rPMo_Iu6btIdghEQ4')
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.NDc4MzMxMzQxOTk0MTk3MDMy.DlMZ5w.smUBE6DS67rPMo_Iu6btIdghEQ4);
