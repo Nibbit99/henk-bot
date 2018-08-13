@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
     console.log('Henkie is klaarie!');
+    bot.user.setGame('with himself')
 });
 
 client.on('message', message => {
