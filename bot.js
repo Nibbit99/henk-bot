@@ -16,7 +16,7 @@ client.on('message', message => {
     if (message.content === 'hb!help') {
         
     message.channel.send({embed: {
-      color: e542f4,
+      color: 241222,
       description: "hb!henk \n neef"
     }});
         
