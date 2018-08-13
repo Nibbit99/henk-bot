@@ -14,18 +14,13 @@ client.on('message', message => {
   	}
     
     
-    if (message.toLowerCase().content === 'hallo henk') {
-    	message.reply('Hallo vriendje!');
-  	}
-    
-    
     if (message.content === 'hb!help') {
         
     message.channel.send({embed: {
       color: 241222,
       description: "hb!henk \n neef"
     }});
-        
+    
   	}
     
 });
