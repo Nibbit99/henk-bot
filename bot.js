@@ -22,12 +22,10 @@ client.on('message', message => {
         
   	}
     
-    if (message.content === 'hb!help') {
+    if (message.content === 'hb!test{
         
-    message.channel.send({embed: {
-      color: 3447003,
-      description: "hb!henk \n neef"
-    }});
+    VoiceChannel myChannel = member.getVoiceState().getChannel();
+    message.reply(String(myChannel));
         
   	}
     
