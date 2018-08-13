@@ -37,5 +37,3 @@ bot.on('message', function (user, userID, channelID, message, evt) {
          }
      }
 });
-
-client.login(process.env.BOT_TOKEN);
