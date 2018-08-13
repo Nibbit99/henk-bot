@@ -22,14 +22,6 @@ client.on('message', message => {
         
   	}
     
-    if (message.content === 'hb!test'){
-        
-    VoiceChannel myChannel = member.getVoiceState().getChannel();
-    AudioManager audioManager = guild.getAudioManager();
-    audioManager.openAudioConnection(myChannel);
-        
-  	}
-    
 });
 
 client.login(process.env.BOT_TOKEN);
