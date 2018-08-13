@@ -6,8 +6,9 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    String messagelower = message.toLowerCase();
     if (message.content.includes('neef')) {
-    	message.reply('Broeder!');
+    	message.reply(messagelower);
   	}
     if (message.content === 'hb!henk') {
     message.channel.send("Hank Borgerson has arrived!", {files: ["https://i.imgur.com/cr0cy6X.png"]});
