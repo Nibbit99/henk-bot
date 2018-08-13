@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('Broeder!');
   	}
     if (message.content === 'hb!henk') {
-    message.channel.send("Hank Borgerson", {files: ["https://i.imgur.com/cr0cy6X.png"]});
+    message.channel.send("Hank Borgerson has arrived!", {files: ["https://i.imgur.com/cr0cy6X.png"]});
   	}
 });
 
