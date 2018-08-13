@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-    console.log('I am ready!');
+    console.log('Henkie is klaarie!');
 });
 
 client.on('message', message => {
@@ -10,9 +10,8 @@ client.on('message', message => {
     	message.reply('Broeder!');
   	}
     if (message.content === 'hb!henk') {
-    message.channel.send("Hank Borgerson", {files: ["http://www.voetbalclub2000.nl/tm2010/images/uploads/players/2014/01/2666_79785_1390156605_tixhr-552172661.png"]});
+    message.channel.send("Hank Borgerson", {files: ["https://vignette.wikia.nocookie.net/bsth/images/0/0f/Bling_Bling_Boy.jpg/revision/latest?cb=20140915153409"]});
   	}
 });
 
-// THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
