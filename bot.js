@@ -10,6 +10,10 @@ client.on('message', message => {
     	message.reply("Ja broer?");
   	}
     
+    if (message.content.includes('hb!eend')) {
+    	message.reply("Quack!");
+  	}
+    
     if (message.content.includes('hb!hallo henk')) {
     	message.reply("hallo daar mijn naam is zeker Henk. Wees gegroet en heb een goede dag, want god wees met u.");
   	}
@@ -30,15 +34,6 @@ client.on('message', message => {
       description: "hb!henk \n neef"
     }});
         
-    if (message.content === 'hb!wat') {
-        
-    message.channel.send({embed: {
-      color: 246522,
-      description: "Wat zyde gy tot my, gy kleine duyvelspecht? Ik beveel ge er kennis van te neemen dat ik met lof ende goedkeuring een kaapersbrief heb gehad van Willem van Oranje ende betrokken ben geweest by talryke geheyme offensieven tegen Alva en de zyne, en zelfstandig meer dan drie honderden Spanjolen heb omgelegd."
-    }});
-    
-  	}
-    
 });
 
 client.login(process.env.BOT_TOKEN);
