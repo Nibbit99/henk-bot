@@ -6,14 +6,14 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.lowercase.includes('neef')) {
+    if (message.content.includes('neef')) {
     	message.reply('Broeder!');
   	}
-    if (message.content.lowercase === 'hb!henk') {
+    if (message.content === 'hb!henk') {
     message.channel.send("Hank Borgerson has arrived!", {files: ["https://i.imgur.com/cr0cy6X.png"]});
   	}
     
-    if (message.content.lowercase === 'hb!help') {
+    if (message.content === 'hb!help') {
         
     message.channel.send({embed: {
       color: 3447003,
