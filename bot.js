@@ -6,12 +6,22 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content.includes('neef')) {
+    if (message.content.lowercase.includes('neef')) {
     	message.reply('Broeder!');
   	}
-    if (message.content === 'hb!henk') {
+    if (message.content.lowercase === 'hb!henk') {
     message.channel.send("Hank Borgerson has arrived!", {files: ["https://i.imgur.com/cr0cy6X.png"]});
   	}
+    
+    if (message.content.lowercase === 'hb!help') {
+        
+    message.channel.send({embed: {
+      color: 3447003,
+      description: "hb!henk \n neef"
+    }});
+        
+  	}
+    
     if (message.content === 'hb!help') {
         
     message.channel.send({embed: {
@@ -20,6 +30,7 @@ client.on('message', message => {
     }});
         
   	}
+    
 });
 
 client.login(process.env.BOT_TOKEN);
