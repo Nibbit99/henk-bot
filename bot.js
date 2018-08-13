@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    var messagelower = message.toLowerCase();
     if (message.content.includes('neef')) {
+    var messagelower = message.toLowerCase();
     	message.reply(messagelower);
   	}
     if (message.content === 'hb!henk') {
