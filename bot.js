@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'hb!neef') {
+    if (message.content.includes('neef')) {
     	message.reply('Broeder!');
   	}
     if (message.content === 'hb!henk') {
