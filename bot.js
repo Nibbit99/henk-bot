@@ -8,11 +8,7 @@ client.on('ready', () => {
 client.on('message', message => {
     if (message.content.includes('hb!neef')) {
     	message.reply("Ja broer?");
-  	}
-    
-    if (message.content.includes('hb!eend')) {
-    	message.reply("Quack!");
-  	}
+    }
     
     if (message.content.includes('hb!hallo henk')) {
     	message.reply("hallo daar mijn naam is zeker Henk. Wees gegroet en heb een goede dag, want god wees met u.");
