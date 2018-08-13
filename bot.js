@@ -10,7 +10,7 @@ client.on('message', message => {
     	message.reply('Broeder!');
   	}
     if (message.content === 'hb!henk') {
-    message.channel.send("Hank Borgerson", {files: ["https://vignette.wikia.nocookie.net/bsth/images/0/0f/Bling_Bling_Boy.jpg/revision/latest?cb=20140915153409"]});
+    message.channel.send("Hank Borgerson", {files: ["https://imgur.com/cr0cy6X"]});
   	}
 });
 
