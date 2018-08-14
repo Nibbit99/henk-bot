@@ -22,6 +22,14 @@ client.on('message', message => {
     }});
   	
     }
+    if (message.content === 'hb!kenjijderijtjes') {
+    
+    message.channel.send({embed: {
+      color: 241222,
+      description: "filia | dominus | bellum | urbs | nomen | manus | res \n filiae | domini | belli | urbis | nominis | manus | rei \n filiae | domino | bello | urbi | nomini | manui | rei \n filiam | dominum | bellium | urbem | nomen | manum | rem \n filia | domino | bello | urbe | nomine | manu | re \n ---------------------------------- \n filiae | domini | bella | urbes | nomina | manus | res \n filiarum | dominorum | bellorum | urbium | nominum | manuum | rerum \n filiis | dominis | bellis | urbibus | nominibus | manibus | rebus \n filias | dominos | bella | urbes | nomina | manus | res \n filiis | dominis | bellis | urbibus | nominibus | manibus | rebus"
+    }});
+  	
+    }
     
     if (message.content.includes('hb!hallo henk')) {
     	message.reply("hallo daar mijn naam is zeker Henk. Wees gegroet en heb een goede dag, want god wees met u.");
