@@ -43,6 +43,10 @@ client.on('message', message => {
     message.channel.send("Hank Borgerson has arrived!", {files: ["https://i.imgur.com/cr0cy6X.png"]});
   	}
     
+    if (message.content === 'hb!cat') {
+    message.channel.send("My banana", {files: ["https://pbs.twimg.com/media/DWcFDXGVoAAzt2w.jpg"]});
+  	}
+    
     
     if (message.content === 'hb!help') {
         
