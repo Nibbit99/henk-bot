@@ -57,6 +57,10 @@ client.on('message', message => {
     
   	}
     
+    if (message.content === 'hb!liefde') {
+    	message.reply("Bro imagine dat je Henk heet en je getrouwd bent met Kemal wowowowowowoow.");
+  	}
+    
 });
 
 client.login(process.env.BOT_TOKEN);
